@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SKY LENS | Immersive 3D Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            orange: {
+              50: '#fffbf0',
+              100: '#fef6db',
+              200: '#fdebaf',
+              300: '#fcdc83',
+              400: '#fbc557',
+              500: '#ec6718', /* GOLD / ORANGE BASE */
+              600: '#b87d0e',
+              700: '#93560b',
+              800: '#79420f',
+              900: '#643410',
+              950: '#391a05',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap');
+
+    body {
+      margin: 0;
+      background-color: #000000;
+      font-family: 'Rajdhani', sans-serif;
+      overflow-x: hidden;
+      /* Prevent horizontal scroll, allow vertical */
+    }
+
+    .font-display {
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    /* Customize scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      background: #000;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #333;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ffaa00;
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "three": "https://esm.sh/three@0.161.0",
+    "react": "https://esm.sh/react@18.2.0",
+    "react/": "https://esm.sh/react@18.2.0/",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@8.15.19?external=three,react,react-dom",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@9.102.0?external=three,react,react-dom,@react-three/fiber",
+    "postprocessing": "https://esm.sh/postprocessing@6.35.3?external=three",
+    "@react-three/postprocessing": "https://esm.sh/@react-three/postprocessing@2.16.2?external=three,react,react-dom,@react-three/fiber,postprocessing",
+    "framer-motion": "https://esm.sh/framer-motion@11.0.8?external=react,react-dom",
+    "lucide-react": "https://esm.sh/lucide-react@0.344.0?external=react,react-dom",
+    "maath": "https://esm.sh/maath@0.10.7?external=three"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
