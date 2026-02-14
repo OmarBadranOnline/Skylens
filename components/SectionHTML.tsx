@@ -56,7 +56,7 @@ export const SectionHTML: React.FC = () => {
                 <span className="font-mono text-sm tracking-widest uppercase">Precision Tracking</span>
               </div>
               <h2 className="font-display text-6xl md:text-8xl font-bold mb-6 leading-none">
-                CINE<br /><span className="text-gray-700">MATIC</span>
+                CINE<span className="text-gray-700">MATIC</span>
               </h2>
               <p className="text-gray-300 text-lg md:text-xl leading-relaxed border-l-2 border-orange-500 pl-6 max-w-md">
                 We utilize heavy-lift drone platforms capable of carrying cinema-grade cameras (RED, ARRI) at speeds up to 100mph. Perfect for high-stakes automotive commercials and large-scale productions.
@@ -77,7 +77,7 @@ export const SectionHTML: React.FC = () => {
                 {/* Fake "PNG" utilizing a blended image or illustration */}
                 <div className="absolute inset-0 animate-float-slow">
                   <img
-                    src="https://images.unsplash.com/photo-1527011046414-4781f1f94f8c?q=80&w=1000&auto=format&fit=crop"
+                    src="/assets/images/Ad1.png"
                     alt="Cinema Camera Drone"
                     className="w-full h-full object-contain drop-shadow-[0_20px_50px_rgba(255,170,0,0.3)] mask-image-fade"
                     style={{
@@ -146,7 +146,7 @@ export const SectionHTML: React.FC = () => {
                 <Zap className="w-6 h-6" />
               </div>
               <h2 className="font-display text-6xl md:text-8xl font-bold mb-6 leading-none">
-                IMMER<br /><span className="text-gray-700">SIVE</span>
+                IMMER<span className="text-gray-700">SIVE</span>
               </h2>
               <p className="text-gray-300 text-lg md:text-xl leading-relaxed border-r-2 border-orange-500 pr-6 max-w-md ml-auto">
                 Experience the thrill of flight. Our custom-built FPV drones navigate tight spaces, dive down skyscrapers, and weave through architectural marvels to deliver shots that are physically impossible for traditional cameras.
@@ -244,7 +244,7 @@ export const SectionHTML: React.FC = () => {
 
         {/* Footer */}
         <footer className="bg-black text-gray-600 py-8 text-center text-xs font-mono border-t border-gray-900">
-          © 2024 SKY LENS MEDIA AGENCY. ALL RIGHTS RESERVED.
+          © 2024 SKY LENS MEDIA AGENCY. ALL RIGHTS RESERVED. <br className="md:hidden" /> DEVELOPED BY OMAR BADRAN.
         </footer>
 
       </div>
